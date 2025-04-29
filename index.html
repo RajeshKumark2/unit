@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        
+        <div class="converter-container">
+            <div class="input-group">
+                <input type="number" id="input-value" placeholder="Enter value" step="any">
+                <select id="input-unit">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+            
+            <div class="swap-btn-container">
+                <button id="swap-btn">⇅ Swap Units</button>
+            </div>
+            
+            <div class="input-group">
+                <input type="number" id="output-value" placeholder="Result" readonly>
+                <select id="output-unit">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+            
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="length">Length</button>
+                <button class="tab-btn" data-category="weight">Weight</button>
+                <button class="tab-btn" data-category="temperature">Temperature</button>
+                <button class="tab-btn" data-category="volume">Volume</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
